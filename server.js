@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const twilio = require("twilio");
 const app = express();
-const PORT = 3000; // You can choose any port you prefer
+const port = process.env.PORT || 3000; // You can choose any port you prefer
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -52,5 +52,5 @@ app.post("/send-sms", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
