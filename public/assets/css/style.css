@@ -1,0 +1,491 @@
+/* Reset some default styles */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.containerbee {
+  color: black;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  mix-blend-mode: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: multiply;
+  color: black;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+}
+
+.container2 {
+  max-width: 1200px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container h1 {
+  text-align: center;
+}
+
+.container3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.container4 {
+  max-width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 20px;
+  mix-blend-mode: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: multiply;
+  color: black;
+}
+
+header {
+  background-color: #e5ac3f; /* Purple color */
+  color: black;
+}
+
+header h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 75px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+nav {
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
+
+.hero {
+  background-color: white;
+  background-size: cover;
+  color: black;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #e5ac3f; /* Purple color */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+
+.services {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.services h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.service {
+  margin-bottom: 40px;
+  width: 300px;
+  text-align: center;
+  margin: 20px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.service img {
+  max-width: 100%;
+}
+
+.about {
+  background-color: #e5ac3f;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #e5ac3f; /* Purple color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #e5ac3f; /* Purple color */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+img {
+  height: 200px;
+  border-radius: 50px;
+}
+
+#Britt {
+  height: 150px;
+}
+
+.font {
+  font-family: "Dancing Script", cursive;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+@media (max-width: 825px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .beecontainer {
+    width: 400px;
+  }
+
+  .container2 {
+    flex-direction: column;
+    margin: 0;
+    padding: 10px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 18px;
+  }
+
+  .container1,
+  .container3,
+  .container4 {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  nav {
+    font-size: 18px;
+  }
+
+  nav ul li {
+    margin-left: 5px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .service {
+    width: 100%;
+    margin: 10px;
+  }
+
+  img {
+    height: 150px;
+  }
+
+  #Britt {
+    height: 100px;
+  }
+
+  .font {
+    font-size: 14px;
+  }
+  .beeimg {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  header h1 {
+    font-size: 50px;
+  }
+
+  nav {
+    font-size: 20px;
+  }
+
+  .service {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    height: 180px;
+  }
+
+  #Britt {
+    height: 130px;
+  }
+
+  .font {
+    font-size: 16px;
+  }
+}
+
+/* Media Query for Large Laptops and Desktops */
+@media (min-width: 1025px) {
+  header h1 {
+    font-size: 75px;
+  }
+
+  nav {
+    font-size: 30px;
+  }
+
+  .service {
+    width: 30%;
+  }
+
+  img {
+    height: 200px;
+  }
+
+  #Britt {
+    height: 150px;
+  }
+
+  .font {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .beecontainer {
+    width: 300px;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+
+  nav {
+    font-size: 15px;
+  }
+
+  nav ul li {
+    margin-left: 5px;
+    display: none;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .btn {
+    font-size: 16px;
+    margin-top: 15px;
+    padding: 8px 15px;
+  }
+
+  .service {
+    width: 100%;
+    margin: 5px;
+  }
+
+  .service p {
+    display: none;
+  }
+
+  img {
+    height: 130px;
+  }
+
+  #Britt {
+    height: 90px;
+  }
+
+  .font {
+    font-size: 14px;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e5ac3f; /* Set your desired background color */
+    padding: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  nav {
+    font-size: 15px;
+  }
+
+  nav ul li {
+    margin-left: 5px;
+    display: none;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .btn {
+    font-size: 16px;
+    margin-top: 15px;
+    padding: 8px 15px;
+  }
+
+  .service {
+    width: 100%;
+    margin: 5px;
+  }
+
+  .service p {
+    display: none;
+  }
+
+  img {
+    height: 130px;
+  }
+
+  #Britt {
+    height: 90px;
+  }
+
+  .font {
+    font-size: 14px;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e5ac3f; /* Set your desired background color */
+    padding: 10px;
+  }
+}

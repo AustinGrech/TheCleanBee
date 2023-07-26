@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRG Cleaning</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <img
+            class="beeimg"
+            src="assets/images/cutebeee.jpg"
+            alt=""
+            srcset=""
+          />
+          <div class="beecontainer">
+            <h1>The Clean Bee</h1>
+
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="container1">
+        <h2>Your Reliable Cleaning Partner</h2>
+        <p>Professional cleaning services for your home and office.</p>
+        <a href="#services" class="btn">Learn More</a>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="container2">
+        <div class="service">
+          <img src="./assets/images/woman.jpg" alt="Service 1" />
+          <h3 onclick="toggleServiceDetails(this)">Residential Cleaning</h3>
+          <p class="service-details">
+            We provide top-notch residential cleaning services to keep your home
+            clean and fresh.
+          </p>
+        </div>
+        <div class="service">
+          <img src="./assets/images/mop.jpg" alt="Service 2" />
+          <h3 onclick="toggleServiceDetails(this)">Commercial Cleaning</h3>
+          <p class="service-details">
+            Our commercial cleaning services ensure a clean and hygienic
+            workplace for your business.
+          </p>
+        </div>
+        <div class="service">
+          <img src="./assets/images/airbnb.jpg" alt="Service 3" />
+          <h3 onclick="toggleServiceDetails(this)">Airbnb Cleaning</h3>
+          <p class="service-details">
+            Prepare your Airbnb property for your guests with our professional
+            cleaning services. We ensure that your property is sparkling clean
+            and welcoming for your guests' arrival.
+          </p>
+        </div>
+        <div class="service">
+          <img src="./assets/images/home.jpg" alt="Service 4" />
+          <h3 onclick="toggleServiceDetails(this)">
+            Move In/Move Out Cleaning
+          </h3>
+          <p class="service-details">
+            Moving to a new home? Leave the cleaning to me! Our move in/move out
+            cleaning services will help you leave your old place spotless or
+            make your new place ready for a fresh start.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container3">
+        <h2>About Me</h2>
+        <img id="Britt" src="./assets/images/Britt.jpg" alt="Cleaning Queen" />
+        <p>
+          My name is Brittany! I am the Queen Bee of these operations! I provide
+          professional cleaning services dedicated to providing exceptional
+          cleaning services to our clients. With years of experience I am a
+          highly trained professional, I deliver outstanding results, leaving
+          your spaces spotless and refreshed.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container3">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any inquiries or want to schedule a cleaning service,
+          please get in touch with us.
+        </p>
+        <form id="contact-form" action="./send_email.php" method="post">
+          <input
+            class="font"
+            type="text"
+            placeholder="Your Name"
+            name="name"
+            required
+          />
+          <input
+            class="font"
+            type="tel"
+            placeholder="Your Phone Number"
+            name="phone"
+            required
+          />
+          <textarea
+            class="font"
+            placeholder="A detailed message on what you need cleaned!"
+            name="message"
+            required
+          ></textarea>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container4">
+        <img src="assets/images/cutebeee.jpg" alt="" srcset="" />
+        <p>&copy; 2023 The Clean Bee. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="./assets/js/index.js"></script>
+</html>
