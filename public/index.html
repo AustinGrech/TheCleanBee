@@ -18,14 +18,24 @@
           />
           <div class="beecontainer">
             <h1>The Clean Bee</h1>
-
-            <ul>
+            <div class="hamburger" onclick="toggleNav()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
               <li><a href="#home">Home</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#about">About Us</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
+          <img
+            class="beeimg"
+            src="assets/images/cutebeee.jpg"
+            alt=""
+            srcset=""
+          />
         </div>
       </nav>
     </header>
@@ -43,7 +53,7 @@
       <div class="container2">
         <div class="service">
           <img src="./assets/images/woman.jpg" alt="Service 1" />
-          <h3 onclick="toggleServiceDetails(this)">Residential Cleaning</h3>
+          <h3>Residential Cleaning</h3>
           <p class="service-details">
             We provide top-notch residential cleaning services to keep your home
             clean and fresh.
@@ -51,7 +61,7 @@
         </div>
         <div class="service">
           <img src="./assets/images/mop.jpg" alt="Service 2" />
-          <h3 onclick="toggleServiceDetails(this)">Commercial Cleaning</h3>
+          <h3>Commercial Cleaning</h3>
           <p class="service-details">
             Our commercial cleaning services ensure a clean and hygienic
             workplace for your business.
@@ -59,7 +69,7 @@
         </div>
         <div class="service">
           <img src="./assets/images/airbnb.jpg" alt="Service 3" />
-          <h3 onclick="toggleServiceDetails(this)">Airbnb Cleaning</h3>
+          <h3>Airbnb Cleans</h3>
           <p class="service-details">
             Prepare your Airbnb property for your guests with our professional
             cleaning services. We ensure that your property is sparkling clean
@@ -68,9 +78,7 @@
         </div>
         <div class="service">
           <img src="./assets/images/home.jpg" alt="Service 4" />
-          <h3 onclick="toggleServiceDetails(this)">
-            Move In/Move Out Cleaning
-          </h3>
+          <h3>Move In/Move Out Cleans</h3>
           <p class="service-details">
             Moving to a new home? Leave the cleaning to me! Our move in/move out
             cleaning services will help you leave your old place spotless or
@@ -101,28 +109,11 @@
           If you have any inquiries or want to schedule a cleaning service,
           please get in touch with us.
         </p>
-        <form id="contact-form" action="./send_email.php" method="post">
-          <input
-            class="font"
-            type="text"
-            placeholder="Your Name"
-            name="name"
-            required
-          />
-          <input
-            class="font"
-            type="tel"
-            placeholder="Your Phone Number"
-            name="phone"
-            required
-          />
-          <textarea
-            class="font"
-            placeholder="A detailed message on what you need cleaned!"
-            name="message"
-            required
-          ></textarea>
-          <button class="btn" type="submit">Send Message</button>
+        <form id="contact-form">
+          <input type="text" placeholder="Your Name" name="name" />
+          <input type="tel" placeholder="Your Phone Number" name="phone" />
+          <textarea placeholder="Your Message" name="message"></textarea>
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </section>

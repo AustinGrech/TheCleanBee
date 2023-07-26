@@ -68,38 +68,41 @@ document.addEventListener("DOMContentLoaded", function () {
     return emailRegex.test(email);
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
 
-document.getElementById("contact-form").onsubmit = function (event) {
-  event.preventDefault();
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-  const formData = new FormData(event.target);
-  const name = formData.get("name");
-  const phone = formData.get("phone");
-  const message = formData.get("message");
+    const formData = new FormData(form);
+    const name = formData.get("name");
+    const phone = formData.get("phone");
+    const message = formData.get("message");
 
-  fetch("/send-sms", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ name, phone, message }),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      if (data.success) {
-        alert("Message sent successfully!");
-        // Optionally, show a success message to the user
-      } else {
+    fetch("/send-sms", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, phone, message }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          alert("Message sent successfully!");
+          // Optionally, show a success message to the user
+        } else {
+          alert("Failed to send message. Please try again later.");
+          // Optionally, show an error message to the user
+        }
+      })
+      .catch((error) => {
+        console.error("Failed to send message:", error);
         alert("Failed to send message. Please try again later.");
         // Optionally, show an error message to the user
-      }
-    })
-    .catch((error) => {
-      console.error("Failed to send message:", error);
-      alert("Failed to send message. Please try again later.");
-      // Optionally, show an error message to the user
-    });
-};
+      });
+  });
+});
 
 function toggleServiceDetails(element) {
   const serviceDetails = element.nextElementSibling;

@@ -26,7 +26,7 @@ app.post("/submit-form", (req, res) => {
 // Send SMS
 app.post("/send-sms", (req, res) => {
   const accountSid = "AC53b804f468ce3486006ffc77e7f9bb97";
-  const authToken = "1b40b74bf1855cad3fd0f4df6496547b";
+  const authToken = "b1dc8c857801feb8d1ae98f4b5c9b042";
   const twilioPhoneNumber = "+12295972844"; // Twilio phone number you obtained
 
   const client = twilio(accountSid, authToken);
