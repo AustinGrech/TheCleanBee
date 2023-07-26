@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const twilio = require("twilio");
+require("dotenv").config();
 const app = express();
 const port = process.env.PORT || 3000; // You can choose any port you prefer
 
@@ -25,9 +26,10 @@ app.post("/submit-form", (req, res) => {
 
 // Send SMS
 app.post("/send-sms", (req, res) => {
-  const accountSid = "AC53b804f468ce3486006ffc77e7f9bb97";
-  const authToken = "b1dc8c857801feb8d1ae98f4b5c9b042";
-  const twilioPhoneNumber = "+12295972844"; // Twilio phone number you obtained
+  const accountSid = process.env.TWILIO_ACCOUNT_SID;
+  const authToken = process.env.TWILIO_AUTH_TOKEN;
+  const twilioPhoneNumber = process.env.TWILIO_PHONE_NUMBER;
+  // Twilio phone number you obtained
 
   const client = twilio(accountSid, authToken);
 

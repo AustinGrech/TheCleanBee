@@ -106,5 +106,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function toggleServiceDetails(element) {
   const serviceDetails = element.nextElementSibling;
-  serviceDetails.classList.toggle("show");
+  serviceDetails.classList.toggle("active");
 }
