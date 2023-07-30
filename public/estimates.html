@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/estimates.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Clean Beestimates</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <img class="beeimg" src="assets/images/beeimg.png" alt="" srcset="" />
+          <div class="beecontainer">
+            <h1>The Clean Bee</h1>
+            <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <img
+            class="beeimg1"
+            src="assets/images/beeimg.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </nav>
+    </header>
+    <h1 class="beeh1">Clean Bee Estimates!</h1>
+    <form id="cleaning-form">
+      <label for="bedrooms">Number of Bedrooms:</label>
+      <input type="number" id="bedrooms" required /><br />
+
+      <label for="bathrooms">Number of Bathrooms:</label>
+      <input type="number" id="bathrooms" required /><br />
+
+      <label for="square-feet">Square Footage:</label>
+      <input type="number" id="square-feet" required /><br />
+
+      <label for="dirtiness">Dirtiness Level (1-10):</label>
+      <input type="number" id="dirtiness" min="1" max="10" required /><br />
+
+      <button type="button" onclick="calculateCleaning()">Calculate</button>
+    </form>
+
+    <div id="result">
+      <h3>Estimated Cleaning Time:</h3>
+      <p id="estimated-hours"></p>
+      <h3>Estimated Price:</h3>
+      <p id="estimated-price"></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+/* Styling for the form */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+
+body {
+  font-family: "Dancing Script", cursive;
+  line-height: 1.6;
+  background-color: #e5ac3f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.beeh1 {
+  text-align: center;
+  font-size: 50px;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  font-family: "Dancing Script", cursive;
+}
+#cleaning-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+}
+
+input[type="number"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: "Dancing Script", cursive;
+}
+
+button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling for the result section */
+#result {
+  display: none;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#result h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#estimated-hours,
+#estimated-price {
+  font-weight: bold;
+}
