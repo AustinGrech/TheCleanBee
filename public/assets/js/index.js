@@ -86,20 +86,17 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       body: JSON.stringify({ name, phone, message }),
     })
-      .then((response) => response.json())
+      .then((response) => response.json()) // <-- Check here
       .then((data) => {
         if (data.success) {
           alert("Message sent successfully!");
-          // Optionally, show a success message to the user
         } else {
           alert("Failed to send message. Please try again later.");
-          // Optionally, show an error message to the user
         }
       })
       .catch((error) => {
         console.error("Failed to send message:", error);
         alert("Failed to send message. Please try again later.");
-        // Optionally, show an error message to the user
       });
   });
 });
